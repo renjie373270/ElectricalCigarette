@@ -10,15 +10,22 @@
     <Static>
       <Workspace>
         <ColumnWidths>
-          <Column0>124</Column0>
+          <Column0>199</Column0>
           <Column1>27</Column1>
           <Column2>27</Column2>
           <Column3>27</Column3>
         </ColumnWidths>
       </Workspace>
+      <Build>
+        <ColumnWidth0>31</ColumnWidth0>
+        <ColumnWidth1>1207</ColumnWidth1>
+        <ColumnWidth2>322</ColumnWidth2>
+        <ColumnWidth3>80</ColumnWidth3>
+      </Build>
+      <TerminalIO/>
     </Static>
     <Windows>
-      <Wnd1>
+      <Wnd2>
         <Tabs>
           <Tab>
             <Identity>TabID-8953-29137</Identity>
@@ -27,18 +34,35 @@
             <Session>
               <NodeDict>
                 <ExpandedNode>ElectricalCigarette</ExpandedNode>
+                <ExpandedNode>ElectricalCigarette/FWlib</ExpandedNode>
+                <ExpandedNode>ElectricalCigarette/USER</ExpandedNode>
               </NodeDict>
             </Session>
           </Tab>
         </Tabs>
         <SelectedTab>0</SelectedTab>
-      </Wnd1>
+      </Wnd2>
+      <Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-25745-29231</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        <SelectedTab>0</SelectedTab>
+      </Wnd3>
     </Windows>
     <Editor>
       <Pane>
         <Tab>
           <Factory>TextEditor</Factory>
-          <Filename>D:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Evaluation\stm8\doc\infocenter\index.ENU.html</Filename>
+          <Filename>$WS_DIR$\..\USER\main.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>369</SelStart>
+          <SelEnd>369</SelEnd>
         </Tab>
         <ActiveTab>0</ActiveTab>
       </Pane>
@@ -60,26 +84,29 @@
             </Toolbar-0125db08>
           </Sizes>
         </Row0>
+        <Row1>
+          <Sizes/>
+        </Row1>
       </Top>
       <Left>
         <Row0>
           <Sizes>
-            <Wnd1>
+            <Wnd2>
               <Rect>
                 <Top>-2</Top>
                 <Left>-2</Left>
-                <Bottom>923</Bottom>
-                <Right>198</Right>
+                <Bottom>560</Bottom>
+                <Right>273</Right>
                 <x>-2</x>
                 <y>-2</y>
                 <xscreen>200</xscreen>
                 <yscreen>200</yscreen>
                 <sizeHorzCX>119048</sizeHorzCX>
                 <sizeHorzCY>206612</sizeHorzCY>
-                <sizeVertCX>119048</sizeVertCX>
-                <sizeVertCY>955579</sizeVertCY>
+                <sizeVertCX>163690</sizeVertCX>
+                <sizeVertCY>580579</sizeVertCY>
               </Rect>
-            </Wnd1>
+            </Wnd2>
           </Sizes>
         </Row0>
       </Left>
@@ -90,7 +117,24 @@
       </Right>
       <Bottom>
         <Row0>
-          <Sizes/>
+          <Sizes>
+            <Wnd3>
+              <Rect>
+                <Top>-2</Top>
+                <Left>-2</Left>
+                <Bottom>363</Bottom>
+                <Right>1682</Right>
+                <x>-2</x>
+                <y>-2</y>
+                <xscreen>1684</xscreen>
+                <yscreen>365</yscreen>
+                <sizeHorzCX>1002381</sizeHorzCX>
+                <sizeHorzCY>377066</sizeHorzCY>
+                <sizeVertCX>119048</sizeVertCX>
+                <sizeVertCY>206612</sizeVertCY>
+              </Rect>
+            </Wnd3>
+          </Sizes>
         </Row0>
       </Bottom>
       <Float>
