@@ -583,7 +583,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>lnk0t.icf</state>
+          <state>$TOOLKIT_DIR$\config\lnkstm8s003f3.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -647,7 +647,7 @@
         </option>
         <option>
           <name>IlinkProgramEntryLabel</name>
-          <state></state>
+          <state>__iar_program_start</state>
         </option>
         <option>
           <name>DoFill</name>
@@ -1529,6 +1529,9 @@
   </group>
   <group>
     <name>USER</name>
+    <file>
+      <name>$PROJ_DIR$\..\USER\led.c</name>
+    </file>
     <file>
       <name>$PROJ_DIR$\..\USER\main.c</name>
       <configuration>

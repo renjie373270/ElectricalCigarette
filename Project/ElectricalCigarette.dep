@@ -2,7 +2,7 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>2969144215</fileChecksum>
+  <fileChecksum>3553633204</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
@@ -29,6 +29,9 @@
       <file>$PROJ_DIR$\Debug\Obj\main.o</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
       <file>$PROJ_DIR$\..\USER\led.h</file>
+      <file>$PROJ_DIR$\..\USER\led.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\led.o</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
@@ -119,7 +122,7 @@
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 10 20 15 3 11 5</file>
+          <file> 10 25 20 15 3 11 5</file>
         </tool>
       </inputs>
     </file>
@@ -128,7 +131,7 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 21 12 14</file>
+          <file> 24 21 12 14</file>
         </tool>
       </inputs>
     </file>
@@ -144,6 +147,29 @@
           <file> 21</file>
         </tool>
       </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\led.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 22 4 9 16 13 19 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 4 9 16 13 19 7</file>
+        </tool>
+      </inputs>
     </file>
   </configuration>
   <configuration>
