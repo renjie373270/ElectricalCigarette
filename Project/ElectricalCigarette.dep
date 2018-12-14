@@ -2,7 +2,7 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>3553633204</fileChecksum>
+  <fileChecksum>3009214398</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
@@ -30,8 +30,20 @@
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
       <file>$PROJ_DIR$\..\USER\led.h</file>
       <file>$PROJ_DIR$\..\USER\led.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\MIC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\MIC.o</file>
+      <file>$PROJ_DIR$\..\USER\main.h</file>
+      <file>$PROJ_DIR$\..\USER\MIC.h</file>
       <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\led.o</file>
+      <file>$PROJ_DIR$\..\USER\MIC.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm8s_exti.o</file>
+      <file>$PROJ_DIR$\..\USER\stm8s_interruput.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm8s_exti.pbi</file>
+      <file>$PROJ_DIR$\..\FWlib\inc\stm8s_exti.h</file>
+      <file>$PROJ_DIR$\..\FWlib\src\stm8s_exti.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm8s_interruput.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm8s_interruput.pbi</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
@@ -80,11 +92,11 @@
       <inputs>
         <tool>
           <name>ICCSTM8</name>
-          <file> 9 16 13 19 4 7 22</file>
+          <file> 26 9 16 13 19 4 7 34 22 27</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 9 16 13 19 4 7 22</file>
+          <file> 26 9 16 13 19 4 7 34 22 27</file>
         </tool>
       </inputs>
     </file>
@@ -122,7 +134,7 @@
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 10 25 20 15 3 11 5</file>
+          <file> 10 25 29 20 15 31 3 36 11 5</file>
         </tool>
       </inputs>
     </file>
@@ -131,7 +143,7 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 24 21 12 14</file>
+          <file> 24 28 21 12 33 14 37</file>
         </tool>
       </inputs>
     </file>
@@ -153,6 +165,29 @@
       <outputs>
         <tool>
           <name>ICCSTM8</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 26 9 16 13 19 4 7 34 22 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 9 16 13 19 4 7 34 22 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\MIC.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
           <file> 25</file>
         </tool>
         <tool>
@@ -163,11 +198,57 @@
       <inputs>
         <tool>
           <name>ICCSTM8</name>
-          <file> 22 4 9 16 13 19 7</file>
+          <file> 26 9 16 13 19 4 7 34 22 27</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 22 4 9 16 13 19 7</file>
+          <file> 26 9 16 13 19 4 7 34 22 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\stm8s_interruput.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 26 9 16 13 19 4 7 34 22 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 9 16 13 19 4 7 34 22 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_exti.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 34 9 16 13 19 4 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34 9 16 13 19 4 7</file>
         </tool>
       </inputs>
     </file>

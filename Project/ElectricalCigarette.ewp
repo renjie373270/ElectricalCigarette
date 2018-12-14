@@ -1524,6 +1524,9 @@
       <name>$PROJ_DIR$\..\FWlib\src\stm8s_clk.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_exti.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\FWlib\src\stm8s_gpio.c</name>
     </file>
   </group>
@@ -1912,6 +1915,12 @@
           </data>
         </settings>
       </configuration>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\MIC.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\stm8s_interruput.c</name>
     </file>
   </group>
 </project>

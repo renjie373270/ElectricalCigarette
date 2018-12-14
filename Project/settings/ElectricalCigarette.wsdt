@@ -36,7 +36,6 @@
                 <ExpandedNode>ElectricalCigarette</ExpandedNode>
                 <ExpandedNode>ElectricalCigarette/FWlib</ExpandedNode>
                 <ExpandedNode>ElectricalCigarette/USER</ExpandedNode>
-                <ExpandedNode>ElectricalCigarette/USER/led.c</ExpandedNode>
               </NodeDict>
             </Session>
           </Tab>
@@ -62,8 +61,8 @@
           <Filename>$WS_DIR$\..\USER\main.c</Filename>
           <XPos>0</XPos>
           <YPos>0</YPos>
-          <SelStart>330</SelStart>
-          <SelEnd>330</SelEnd>
+          <SelStart>239</SelStart>
+          <SelEnd>239</SelEnd>
         </Tab>
         <ActiveTab>0</ActiveTab>
       </Pane>

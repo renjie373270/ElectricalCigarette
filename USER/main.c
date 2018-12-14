@@ -1,8 +1,4 @@
-
-#include "stm8s.h"
-#include "stm8s_clk.h"
-#include "led.h"
-
+#include "main.h"
 
 
 void delay(unsigned int x) {
@@ -18,6 +14,7 @@ void Clock_Init() {
 
 int main(void) {
     LED_Init();
+    MIC_Init();
     while (1) {
         LED_Charging();
         delay(1000);
