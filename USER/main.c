@@ -15,6 +15,8 @@ void Clock_Init() {
 int main(void) {
     LED_Init();
     MIC_Init();
+    Motor_Init();
+    Atomizer_Init();
     while (1) {
         LED_Charging();
         delay(1000);

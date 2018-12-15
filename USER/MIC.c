@@ -5,14 +5,14 @@
 #include "main.h"
 
 void MIC_Init() {
-    GPIO_Init(GPIOC, GPIO_PIN_6, GPIO_MODE_IN_PU_IT);
+    disableInterrupts();
+    GPIO_Init(MIC_PORT, MIC_PIN, GPIO_MODE_IN_PU_IT);
+    EXTI_SetExtIntSensitivity(MIC_EXTI_PORT, EXTI_SENSITIVITY_FALL_LOW);
     enableInterrupts();
-    EXTI_SetExtIntSensitivity(EXTI_PORT_GPIOC, EXTI_SENSITIVITY_FALL_LOW);
 }
 
-
-//TODO  high means smoking, low means not!!!!!!!!!!!!!!!
+//TODO  Steven high means smoking, low means not!!!!!!!!!!!!!!!
 bool Is_Still_Smoking() {
-    return !GPIO_ReadInputPin(GPIOC, GPIO_PIN_6);
+    return !GPIO_ReadInputPin(MIC_PORT, MIC_PIN);
 }
 

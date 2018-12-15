@@ -1,3 +1,5 @@
 Debug/
 Release/List
 Release/Obj
+*.pbi
+*.o

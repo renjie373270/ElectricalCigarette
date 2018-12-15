@@ -12,6 +12,8 @@
 
 #include "led.h"
 #include "MIC.h"
+#include "atomizer.h"
+#include "motor.h"
 
 void delay(unsigned int x);
 

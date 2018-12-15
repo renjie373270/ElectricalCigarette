@@ -7,6 +7,10 @@
 
 #include "main.h"
 
+#define MIC_PORT GPIOC
+#define MIC_PIN  GPIO_PIN_6
+#define MIC_EXTI_PORT EXTI_PORT_GPIOC
+
 void MIC_Init();
 bool Is_Still_Smoking();
 

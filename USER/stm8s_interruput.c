@@ -1,11 +1,6 @@
 #include "main.h"
 
 
-EXTI_Sensitivity_TypeDef  Keyexti_Sensitivity_Type;
-
-
-
-
 #pragma vector=1
 __interrupt void TRAP_IRQHandler(void)
 {
@@ -40,16 +35,12 @@ __interrupt void EXTI_PORTB_IRQHandler(void)
 #pragma vector=7
 __interrupt void EXTI_PORTC_IRQHandler(void)
 {
-    while (Is_Still_Smoking()) {
-        delay(100);
-        LED_Smoking();
-    }
-    LED_Stop_Smoking();
+    Atomizer_Smoking();
 }
 #pragma vector=8
 __interrupt void EXTI_PORTD_IRQHandler(void)
 {
-  
+    Atomizer_In_Out();
 }
 #pragma vector=9
 __interrupt void EXTI_PORTE_IRQHandler(void)
