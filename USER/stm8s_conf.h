@@ -39,17 +39,17 @@
  #include "stm8s_can.h"
 #endif /* STM8S208 || STM8AF52Ax */
 #include "stm8s_clk.h"
-/*#include "stm8s_exti.h"*/
+#include "stm8s_exti.h"
 /*#include "stm8s_flash.h"*/
 #include "stm8s_gpio.h"
 /*#include "stm8s_i2c.h"*/
-/*#include "stm8s_itc.h"*/
+#include "stm8s_itc.h"
 /*#include "stm8s_iwdg.h"*/
 /*#include "stm8s_rst.h"*/
 /*#include "stm8s_spi.h"*/
-/*#include "stm8s_tim1.h"*/
+#include "stm8s_tim1.h"
 #ifndef STM8S903
- /*#include "stm8s_tim2.h"*/
+    #include "stm8s_tim2.h"
 #endif /* STM8S903 */
 #if defined(STM8S208) || defined(STM8S207) ||defined(STM8S105) || defined (STM8AF52Ax) ||\
     defined (STM8AF62Ax) || defined (STM8AF626x)

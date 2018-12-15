@@ -7,6 +7,7 @@
 
 #include "main.h"
 
+//change extern interrupt priority after change the port
 #define MIC_PORT GPIOC
 #define MIC_PIN  GPIO_PIN_6
 #define MIC_EXTI_PORT EXTI_PORT_GPIOC

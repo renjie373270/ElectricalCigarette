@@ -15,6 +15,6 @@ void Motor_Init() {
 
 void Motor_Shake() {
     MOTOR_RUNNING();
-    delay(200);
+    Special_Delay_In_MilliSeconds(200);
     MOTOR_STOP();
 }

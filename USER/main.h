@@ -14,7 +14,6 @@
 #include "MIC.h"
 #include "atomizer.h"
 #include "motor.h"
-
-void delay(unsigned int x);
+#include "delay.h"
 
 #endif //ELECTRICALCIGARETTE_MAIN_H

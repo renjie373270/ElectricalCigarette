@@ -1,15 +1,17 @@
 #include "main.h"
 
 
-void delay(unsigned int x) {
-    unsigned int i, j;
-    for(i=0;i<x;i++) {
-        for(j=0;j<200;j++);
-    }
-}
-
 void Clock_Init() {
     CLK_HSIPrescalerConfig(CLK_PRESCALER_CPUDIV16);
+}
+
+void ITC_Config() {
+    disableInterrupts();
+    ITC_SetSoftwarePriority(ITC_IRQ_TIM2_OVF, ITC_PRIORITYLEVEL_0);
+    ITC_SetSoftwarePriority(ITC_IRQ_PORTC, ITC_PRIORITYLEVEL_1);
+    ITC_SetSoftwarePriority(ITC_IRQ_PORTD, ITC_PRIORITYLEVEL_1);
+    ITC_SetSoftwarePriority(ITC_IRQ_TIM1_OVF, ITC_PRIORITYLEVEL_2);
+    enableInterrupts();
 }
 
 int main(void) {
@@ -17,10 +19,12 @@ int main(void) {
     MIC_Init();
     Motor_Init();
     Atomizer_Init();
+    Delay_Init();
+    ITC_Config();
     while (1) {
         LED_Charging();
-        delay(1000);
+        Normal_Delay_In_MilliSeconds(200);
         LED_Battery_Full();
-        delay(1000);
+        Normal_Delay_In_MilliSeconds(200);
     }
 }

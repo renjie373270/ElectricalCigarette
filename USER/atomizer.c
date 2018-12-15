@@ -51,7 +51,7 @@ void Atomizer_In_Out() {
 //TODO Steven, control mos drive for atomizer
 void Atomizer_Smoking() {
     while (Is_Still_Smoking()) {
-        delay(100);
+        Normal_Delay_In_MilliSeconds(100);
         LED_Smoking();
     }
     LED_Stop_Smoking();

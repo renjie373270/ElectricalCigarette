@@ -1529,11 +1529,23 @@
     <file>
       <name>$PROJ_DIR$\..\FWlib\src\stm8s_gpio.c</name>
     </file>
+    <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_itc.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_tim1.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_tim2.c</name>
+    </file>
   </group>
   <group>
     <name>USER</name>
     <file>
       <name>$PROJ_DIR$\..\USER\atomizer.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\delay.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\USER\led.c</name>

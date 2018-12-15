@@ -21,7 +21,7 @@
         
       <ColumnWidth0>31</ColumnWidth0><ColumnWidth1>1207</ColumnWidth1><ColumnWidth2>322</ColumnWidth2><ColumnWidth3>80</ColumnWidth3></Build>
       <TerminalIO/>
-    </Static>
+    <Find-in-Files><ColumnWidth0>580</ColumnWidth0><ColumnWidth1>82</ColumnWidth1><ColumnWidth2>994</ColumnWidth2></Find-in-Files></Static>
     <Windows>
       
       
@@ -45,7 +45,7 @@
             <Factory>Build</Factory>
             <Session/>
           </Tab>
-        </Tabs>
+        <Tab><Identity>TabID-5269-12277</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
         
       <SelectedTab>0</SelectedTab></Wnd1></Windows>
     <Editor>
@@ -53,7 +53,7 @@
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>205</SelStart><SelEnd>205</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\MIC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>381</SelStart><SelEnd>381</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\atomizer.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>465</SelStart><SelEnd>465</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\stm8s_interruput.c</Filename><XPos>0</XPos><YPos>31</YPos><SelStart>599</SelStart><SelEnd>599</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>44</SelStart><SelEnd>66</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\MIC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>381</SelStart><SelEnd>381</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\atomizer.c</Filename><XPos>0</XPos><YPos>37</YPos><SelStart>1219</SelStart><SelEnd>1219</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\stm8s_interruput.c</Filename><XPos>0</XPos><YPos>74</YPos><SelStart>1600</SelStart><SelEnd>1600</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\motor.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>413</SelStart><SelEnd>413</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\delay.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>1026</SelStart><SelEnd>1026</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
