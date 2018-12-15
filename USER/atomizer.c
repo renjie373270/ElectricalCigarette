@@ -2,22 +2,15 @@
 // Created by RenJie on 2018/12/15 0015 10:29.
 //
 
-#include "main.h"
+#include "atomizer.h"
 
-//atomizer drive
-#define ATOMIZER_DRIVE_PORT GPIOC
-#define ATOMIZER_DRIVE_PIN  GPIO_PIN_5
+#define ATOMIZER_ON()  GPIO_WriteLow(ATOMIZER_DRIVE_PORT, ATOMIZER_DRIVE_PIN)
+#define ATOMIZER_OFF() GPIO_WriteHigh(ATOMIZER_DRIVE_PORT, ATOMIZER_DRIVE_PIN)
 
-//check the voltage on resistance
-#define ATOMIZER_ADC1_PORT GPIOD
-#define ATOMIZER_ADC1_PIN  GPIO_PIN_3
-#define ATOMIZER_ADC1_EXTI_PORT EXTI_PORT_GPIOD
-
-//check the voltage on atomizer
-#define ATOMIZER_ADC2_PORT GPIOD
-#define ATOMIZER_ADC2_PIN  GPIO_PIN_2
-#define ATOMIZER_ADC2_EXTI_PORT EXTI_PORT_GPIOD
-
+void Atomizer_Drive_Init() {
+    GPIO_Init(ATOMIZER_DRIVE_PORT, ATOMIZER_DRIVE_PIN, GPIO_MODE_OUT_PP_HIGH_FAST);
+    ATOMIZER_OFF();
+}
 
 void Atomizer_Init() {
     disableInterrupts();
@@ -31,28 +24,38 @@ bool Is_Atomizer_In() {
 }
 
 void Atomizer_In() {
-    //TODO Steven change io mode to adc
+    Atomizer_Drive_Init();
 }
 
 void Atomizer_Out() {
-    //TODO Steven change io mode to extern interrupt
+    Atomizer_Init();
 }
 
 
 void Atomizer_In_Out() {
-    if(Is_Atomizer_In()) {
+    static bool isAtomizerIn = false;
+    if(!isAtomizerIn && Is_Atomizer_In()) {
+        isAtomizerIn = true;
         Atomizer_In();
-    } else {
-        Atomizer_Out();
+        Motor_Shake();
     }
-    Motor_Shake();
+
+    if(isAtomizerIn && !Is_Atomizer_In()) {
+        isAtomizerIn = false;
+        Atomizer_Out();
+        Motor_Shake();
+    }
 }
 
-//TODO Steven, control mos drive for atomizer
+
+//TODO Steven, power control
+//TODO Steven, check power
 void Atomizer_Smoking() {
     while (Is_Still_Smoking()) {
-        Normal_Delay_In_MilliSeconds(100);
+        Software_Delay_MS(100);
         LED_Smoking();
+        ATOMIZER_ON();
     }
     LED_Stop_Smoking();
+    ATOMIZER_OFF();
 }

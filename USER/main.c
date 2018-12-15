@@ -7,24 +7,23 @@ void Clock_Init() {
 
 void ITC_Config() {
     disableInterrupts();
-    ITC_SetSoftwarePriority(ITC_IRQ_TIM2_OVF, ITC_PRIORITYLEVEL_0);
-    ITC_SetSoftwarePriority(ITC_IRQ_PORTC, ITC_PRIORITYLEVEL_1);
+    ITC_SetSoftwarePriority(ITC_IRQ_PORTC, ITC_PRIORITYLEVEL_0);
     ITC_SetSoftwarePriority(ITC_IRQ_PORTD, ITC_PRIORITYLEVEL_1);
-    ITC_SetSoftwarePriority(ITC_IRQ_TIM1_OVF, ITC_PRIORITYLEVEL_2);
     enableInterrupts();
 }
+
+static uint16_t voltageOfBattery;
 
 int main(void) {
     LED_Init();
     MIC_Init();
-    Motor_Init();
     Atomizer_Init();
-    Delay_Init();
     ITC_Config();
     while (1) {
         LED_Charging();
-        Normal_Delay_In_MilliSeconds(200);
+        Software_Delay_MS(200);
         LED_Battery_Full();
-        Normal_Delay_In_MilliSeconds(200);
+        Software_Delay_MS(200);
+        voltageOfBattery = Read_Voltage_Of_Battery_MV();
     }
 }

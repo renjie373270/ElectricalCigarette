@@ -1,4 +1,4 @@
-#include "main.h"
+#include "led.h"
 
 #define LED_CHARGING_ON()  GPIO_WriteLow(LED_RED_PORT, LED_RED_PIN)
 #define LED_CHARGING_OFF() GPIO_WriteHigh(LED_RED_PORT, LED_RED_PIN)
@@ -15,6 +15,16 @@ void LED_Init() {
     LED_CHARGING_OFF();
     LED_BATTERY_FULL_OFF();
     LED_SMOKING_OFF();
+}
+
+void LED_Out_Of_Battery() {
+    uint16_t i;
+    for(i = 0; i < 4; i++) {
+        LED_CHARGING_ON();
+        Software_Delay_MS(200);
+        LED_CHARGING_OFF();
+        Software_Delay_MS(200);
+    }
 }
 
 void LED_Charging() {

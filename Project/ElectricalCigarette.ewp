@@ -1521,6 +1521,9 @@
   <group>
     <name>FWlib</name>
     <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_adc1.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\FWlib\src\stm8s_clk.c</name>
     </file>
     <file>
@@ -1541,6 +1544,9 @@
   </group>
   <group>
     <name>USER</name>
+    <file>
+      <name>$PROJ_DIR$\..\USER\adc.c</name>
+    </file>
     <file>
       <name>$PROJ_DIR$\..\USER\atomizer.c</name>
     </file>
@@ -1936,6 +1942,9 @@
     </file>
     <file>
       <name>$PROJ_DIR$\..\USER\motor.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\power.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\USER\stm8s_interruput.c</name>

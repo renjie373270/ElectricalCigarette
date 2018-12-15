@@ -13,5 +13,5 @@ void Delay_Timer1_Decrement();
 void Delay_Timer2_Decrement();
 void Normal_Delay_In_MilliSeconds(uint32_t time);
 void Special_Delay_In_MilliSeconds(uint32_t time);
-
+void Software_Delay_MS(uint32_t timeInMilliSeconds);
 #endif //ELECTRICALCIGARETTE_DELAY_H

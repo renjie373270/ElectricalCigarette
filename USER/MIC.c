@@ -2,7 +2,7 @@
 // Created by RenJie on 2018/12/14 0014 17:58.
 //
 
-#include "main.h"
+#include "MIC.h"
 
 void MIC_Init() {
     disableInterrupts();

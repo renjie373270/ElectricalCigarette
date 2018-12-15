@@ -15,7 +15,8 @@
 #define LED_BLUE_PORT GPIOB
 #define LED_BLUE_PIN  GPIO_PIN_5
 
-void LED_Init(void);
+void LED_Init();
+void LED_Out_Of_Battery();
 void LED_Charging();
 void LED_Stop_Charging();
 void LED_Battery_Full();

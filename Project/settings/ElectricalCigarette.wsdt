@@ -12,7 +12,7 @@
           
           
           
-        <Column0>199</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>182</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Build>
         
@@ -21,7 +21,7 @@
         
       <ColumnWidth0>31</ColumnWidth0><ColumnWidth1>1207</ColumnWidth1><ColumnWidth2>322</ColumnWidth2><ColumnWidth3>80</ColumnWidth3></Build>
       <TerminalIO/>
-    <Find-in-Files><ColumnWidth0>580</ColumnWidth0><ColumnWidth1>82</ColumnWidth1><ColumnWidth2>994</ColumnWidth2></Find-in-Files></Static>
+    <Find-in-Files><ColumnWidth0>580</ColumnWidth0><ColumnWidth1>82</ColumnWidth1><ColumnWidth2>994</ColumnWidth2></Find-in-Files><Debug-Log><ColumnWidth0>27</ColumnWidth0><ColumnWidth1>1614</ColumnWidth1></Debug-Log></Static>
     <Windows>
       
       
@@ -33,7 +33,7 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>ElectricalCigarette</ExpandedNode><ExpandedNode>ElectricalCigarette/FWlib</ExpandedNode><ExpandedNode>ElectricalCigarette/USER</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>ElectricalCigarette</ExpandedNode><ExpandedNode>ElectricalCigarette/FWlib</ExpandedNode><ExpandedNode>ElectricalCigarette/USER</ExpandedNode><ExpandedNode>ElectricalCigarette/USER/main.c</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
@@ -45,7 +45,7 @@
             <Factory>Build</Factory>
             <Session/>
           </Tab>
-        <Tab><Identity>TabID-5269-12277</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        <Tab><Identity>TabID-5269-12277</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-9102-14643</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
         
       <SelectedTab>0</SelectedTab></Wnd1></Windows>
     <Editor>
@@ -53,7 +53,7 @@
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>44</SelStart><SelEnd>66</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\MIC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>381</SelStart><SelEnd>381</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\atomizer.c</Filename><XPos>0</XPos><YPos>37</YPos><SelStart>1219</SelStart><SelEnd>1219</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\stm8s_interruput.c</Filename><XPos>0</XPos><YPos>74</YPos><SelStart>1600</SelStart><SelEnd>1600</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\motor.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>413</SelStart><SelEnd>413</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\delay.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>1026</SelStart><SelEnd>1026</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\main.c</Filename><XPos>0</XPos><YPos>4</YPos><SelStart>353</SelStart><SelEnd>353</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\MIC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>381</SelStart><SelEnd>381</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\motor.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>370</SelStart><SelEnd>370</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\delay.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>1344</SelStart><SelEnd>1344</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\adc.c</Filename><XPos>0</XPos><YPos>2</YPos><SelStart>1026</SelStart><SelEnd>1026</SelEnd></Tab><ActiveTab>4</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\power.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>154</SelStart><SelEnd>154</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\atomizer.c</Filename><XPos>0</XPos><YPos>30</YPos><SelStart>1206</SelStart><SelEnd>1206</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\stm8s_interruput.c</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>588</SelStart><SelEnd>588</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\led.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>757</SelStart><SelEnd>757</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       

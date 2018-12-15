@@ -2,7 +2,7 @@
 // Created by RenJie on 2018/12/15 0015 13:47.
 //
 
-#include "main.h"
+#include "delay.h"
 
 static uint32_t timer1DelayInMilliSeconds;
 static uint32_t timer2DelayInMilliSeconds;
@@ -50,5 +50,12 @@ void Normal_Delay_In_MilliSeconds(uint32_t time) {
 void Special_Delay_In_MilliSeconds(uint32_t time) {
     timer2DelayInMilliSeconds = time;
     while (timer2DelayInMilliSeconds != 0);
+}
+
+void Software_Delay_MS(uint32_t timeInMilliSeconds) {
+    uint16_t i, j;
+    for(i = 0; i < timeInMilliSeconds; i ++) {
+        for(j = 0; j < 200; j++);
+    }
 }
 

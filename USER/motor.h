@@ -5,6 +5,8 @@
 #ifndef ELECTRICALCIGARETTE_MOTOR_H
 #define ELECTRICALCIGARETTE_MOTOR_H
 
+#include "main.h"
+
 //motor drive
 #define MOTOR_DRIVE_PORT GPIOC
 #define MOTOR_DRIVE_PIN  GPIO_PIN_7

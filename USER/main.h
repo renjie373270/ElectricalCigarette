@@ -15,5 +15,7 @@
 #include "atomizer.h"
 #include "motor.h"
 #include "delay.h"
+#include "adc.h"
+#include "power.h"
 
 #endif //ELECTRICALCIGARETTE_MAIN_H
