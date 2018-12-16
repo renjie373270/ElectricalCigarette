@@ -38,6 +38,7 @@ __interrupt void EXTI_PORTC_IRQHandler(void) {
 
 #pragma vector=8
 __interrupt void EXTI_PORTD_IRQHandler(void) {
+    Power_Charge_Check();
     Atomizer_In_Out();
 }
 

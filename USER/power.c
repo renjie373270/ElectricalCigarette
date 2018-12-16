@@ -4,6 +4,29 @@
 
 #include "power.h"
 
+void Power_Charge_Init() {
+    disableInterrupts();
+    //TODO Steven, float
+    GPIO_Init(POWER_CHARGE_PORT, POWER_CHARGE_PIN, GPIO_MODE_IN_FL_NO_IT);
+    EXTI_SetExtIntSensitivity(MIC_EXTI_PORT, EXTI_SENSITIVITY_RISE_ONLY);
+    enableInterrupts();
+}
+
+bool Is_Still_Charging() {
+    return GPIO_ReadInputPin(POWER_CHARGE_PORT, POWER_CHARGE_PIN);
+}
+
+void Power_Charge_Check() {
+    while (Is_Still_Charging()) {
+        uint16_t voltageOfBattery = Read_Voltage_Of_Battery_MV();
+        if(voltageOfBattery > 4100)
+            LED_Battery_Full();
+        else
+            LED_Charging();
+    }
+    LED_All_Off();
+}
+
 void Power_ADC_Init() {
     ADC1_DeInit();
     GPIO_Init(POWER_CHECK_PORT, POWER_CHECK_PIN, GPIO_MODE_IN_FL_NO_IT);

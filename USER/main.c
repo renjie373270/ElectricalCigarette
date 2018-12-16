@@ -17,21 +17,13 @@ extern void Atomizer_Drive_Init();
 int main(void) {
     LED_Init();
     MIC_Init();
+    Power_Charge_Init();
     Atomizer_Init();
     ITC_Config();
     while (1) {
-        uint16_t voltageOfBattery = Read_Voltage_Of_Battery_MV();
-        //charging
-        if(voltageOfBattery > 3700 || voltageOfBattery == 0) {
-            if(voltageOfBattery > 4150)
-                LED_Battery_Full();
-             else
-                LED_Charging();
-        } else {
-            LED_All_Off();
-            //TODO Steven, sleep
-        }
+        LED_All_Off();
         Software_Delay_MS(100);
+        halt();
     }
 }
 

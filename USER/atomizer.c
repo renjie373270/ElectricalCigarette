@@ -124,7 +124,6 @@ void delay(uint32_t time) {
 }
 
 void Smoking_In_Constant_Power() {
-    uint8_t i;
     static uint8_t pulses = 0;
     uint16_t expectedPowerMW = 4000;
     static double dutyRatio = 0.0;
