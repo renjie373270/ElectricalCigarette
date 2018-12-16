@@ -12,7 +12,6 @@ void ITC_Config() {
     enableInterrupts();
 }
 
-static uint16_t voltageOfBattery;
 
 int main(void) {
     LED_Init();
@@ -20,10 +19,16 @@ int main(void) {
     Atomizer_Init();
     ITC_Config();
     while (1) {
-        LED_Charging();
-        Software_Delay_MS(200);
-        LED_Battery_Full();
-        Software_Delay_MS(200);
-        voltageOfBattery = Read_Voltage_Of_Battery_MV();
+        uint16_t voltageOfBattery = Read_Voltage_Of_Battery_MV();
+        //charging
+        if(voltageOfBattery > 3700 || voltageOfBattery == 0) {
+            if(voltageOfBattery > 4150)
+                LED_Battery_Full();
+             else
+                LED_Charging();
+        } else {
+            LED_All_Off();
+            //TODO Steven, sleep
+        }
     }
 }

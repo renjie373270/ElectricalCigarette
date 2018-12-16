@@ -22,5 +22,6 @@ void LED_Stop_Charging();
 void LED_Battery_Full();
 void LED_Smoking();
 void LED_Stop_Smoking();
+void LED_All_Off();
 
 #endif

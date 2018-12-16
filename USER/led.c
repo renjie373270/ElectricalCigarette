@@ -49,3 +49,9 @@ void LED_Smoking() {
 void LED_Stop_Smoking() {
     LED_SMOKING_OFF();
 }
+
+void LED_All_Off() {
+    LED_CHARGING_OFF();
+    LED_BATTERY_FULL_OFF();
+    LED_SMOKING_OFF();
+}
