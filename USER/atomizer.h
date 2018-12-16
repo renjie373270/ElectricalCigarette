@@ -32,4 +32,6 @@ bool Is_Atomizer_In();
 void Atomizer_In_Out();
 void Atomizer_Smoking();
 
+extern bool smokeStatus;
+
 #endif //ELECTRICALCIGARETTE_ATOMIZER_H

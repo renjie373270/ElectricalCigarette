@@ -12,6 +12,7 @@ void ITC_Config() {
     enableInterrupts();
 }
 
+extern void Atomizer_Drive_Init();
 
 int main(void) {
     LED_Init();
@@ -30,5 +31,17 @@ int main(void) {
             LED_All_Off();
             //TODO Steven, sleep
         }
+        Software_Delay_MS(100);
     }
 }
+
+
+#ifdef USE_FULL_ASSERT
+
+void assert_failed(u8* file, u32 line)
+{
+  while (1)
+  {
+  }
+}
+#endif

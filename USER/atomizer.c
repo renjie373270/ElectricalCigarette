@@ -7,6 +7,7 @@
 #define ATOMIZER_ON()  GPIO_WriteLow(ATOMIZER_DRIVE_PORT, ATOMIZER_DRIVE_PIN)
 #define ATOMIZER_OFF() GPIO_WriteHigh(ATOMIZER_DRIVE_PORT, ATOMIZER_DRIVE_PIN)
 
+bool smokeStatus = false;
 
 void Atomizer_ADC_Node1_Init() {
     ADC1_DeInit();
@@ -115,22 +116,44 @@ void Atomizer_In_Out() {
 }
 
 
-//TODO Steven, power control
-//TODO Steven, check power
+void delay(uint32_t time) {
+    uint16_t i, j;
+    for(i = 0; i < time; i ++) {
+        for(j = 0; j < 20; j++);
+    }
+}
+
+void Smoking_In_Constant_Power() {
+    uint8_t i;
+    static uint8_t pulses = 0;
+    uint16_t expectedPowerMW = 4000;
+    static double dutyRatio = 0.0;
+
+    ATOMIZER_ON();
+    uint16_t currentPowerInMW = Get_Atomizer_Power();
+
+    dutyRatio = expectedPowerMW;
+    dutyRatio = dutyRatio * 100 / currentPowerInMW;
+    pulses = (uint8_t) dutyRatio;
+    pulses = pulses <= 100 ? pulses : 100;
+
+    delay(pulses);
+    ATOMIZER_OFF();
+    delay(100 - pulses);
+}
+
 void Atomizer_Smoking() {
     uint16_t voltageOfBattery = Read_Voltage_Of_Battery_MV();
     if(voltageOfBattery < 3650) {
         LED_Out_Of_Battery();
         return;
     }
+
+    LED_Smoking();
     while (Is_Still_Smoking()) {
-        Software_Delay_MS(20);
-        LED_Smoking();
-        ATOMIZER_ON();
-        static uint16_t power = 0;
-        power = Get_Atomizer_Power();
-        Atomizer_Init();
+        Smoking_In_Constant_Power();
     }
     LED_Stop_Smoking();
     ATOMIZER_OFF();
+    Atomizer_Init();
 }

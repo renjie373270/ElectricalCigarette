@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-274549546
+Checksum=-2042507298
 [CallStack]
 ShowArgs=0
 [Disassembly]
@@ -41,6 +41,11 @@ ActionState=1
 [Trace1]
 Enabled=0
 ShowSource=1
+[watch_formats]
+Fmt0={W}0:pulses	2	0
+Fmt1={W}42:pulses	3	0
+Fmt2={W}42:voltageOfAtomizerMV	3	0
+Fmt3={W}42:voltageOfResistanceMV	3	0
 [Breakpoints]
 Count=0
 [Log file]
