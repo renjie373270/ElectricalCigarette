@@ -25,7 +25,7 @@
     <Windows>
       
       
-    <Wnd0>
+    <Wnd2>
         <Tabs>
           <Tab>
             <Identity>TabID-8953-29137</Identity>
@@ -37,7 +37,7 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
         <Tabs>
           <Tab>
             <Identity>TabID-25745-29231</Identity>
@@ -47,20 +47,20 @@
           </Tab>
         <Tab><Identity>TabID-5269-12277</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-9102-14643</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\main.c</Filename><XPos>0</XPos><YPos>4</YPos><SelStart>353</SelStart><SelEnd>353</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\MIC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>381</SelStart><SelEnd>381</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\motor.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>370</SelStart><SelEnd>370</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\delay.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>1344</SelStart><SelEnd>1344</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\adc.c</Filename><XPos>0</XPos><YPos>2</YPos><SelStart>1026</SelStart><SelEnd>1026</SelEnd></Tab><ActiveTab>4</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\power.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>154</SelStart><SelEnd>154</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\atomizer.c</Filename><XPos>0</XPos><YPos>30</YPos><SelStart>1206</SelStart><SelEnd>1206</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\stm8s_interruput.c</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>588</SelStart><SelEnd>588</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\led.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>757</SelStart><SelEnd>757</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\main.c</Filename><XPos>0</XPos><YPos>4</YPos><SelStart>550</SelStart><SelEnd>550</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\MIC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>381</SelStart><SelEnd>381</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\motor.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>370</SelStart><SelEnd>370</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\delay.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>1344</SelStart><SelEnd>1344</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\adc.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1160</SelStart><SelEnd>1160</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\power.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>711</SelStart><SelEnd>711</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\atomizer.c</Filename><XPos>0</XPos><YPos>30</YPos><SelStart>1206</SelStart><SelEnd>1206</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\stm8s_interruput.c</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>588</SelStart><SelEnd>588</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\USER\led.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>757</SelStart><SelEnd>757</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\FWlib\src\stm8s_adc1.c</Filename><XPos>0</XPos><YPos>541</YPos><SelStart>18056</SelStart><SelEnd>18056</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-010bfc80><key>iaridepm.enu1</key></Toolbar-010bfc80></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>560</Bottom><Right>273</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>119048</sizeHorzCX><sizeHorzCY>206612</sizeHorzCY><sizeVertCX>163690</sizeVertCX><sizeVertCY>580579</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>363</Bottom><Right>1682</Right><x>-2</x><y>-2</y><xscreen>1684</xscreen><yscreen>365</yscreen><sizeHorzCX>1002381</sizeHorzCX><sizeHorzCY>377066</sizeHorzCY><sizeVertCX>119048</sizeVertCX><sizeVertCY>206612</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-0024fd98><key>iaridepm.enu1</key></Toolbar-0024fd98></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>560</Bottom><Right>273</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>119048</sizeHorzCX><sizeHorzCY>206612</sizeHorzCY><sizeVertCX>163690</sizeVertCX><sizeVertCY>580579</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>363</Bottom><Right>1682</Right><x>-2</x><y>-2</y><xscreen>1684</xscreen><yscreen>365</yscreen><sizeHorzCX>1002381</sizeHorzCX><sizeHorzCY>377066</sizeHorzCY><sizeVertCX>119048</sizeVertCX><sizeVertCY>206612</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 

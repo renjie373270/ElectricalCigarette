@@ -1545,9 +1545,6 @@
   <group>
     <name>USER</name>
     <file>
-      <name>$PROJ_DIR$\..\USER\adc.c</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\..\USER\atomizer.c</name>
     </file>
     <file>

@@ -1,5 +1,6 @@
 Debug/
-Release/List
-Release/Obj
-*.pbi
+Release/
 *.o
+*.dbgdt
+*.dni
+*.wsdt
